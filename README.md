@@ -7,16 +7,19 @@ A conversational AI chatbot for tracking packages and filing claims for lost ite
 ### Backend Setup
 
 1. Navigate to backend folder:
+
 ```bash
 cd backend
 ```
 
 2. Install dependencies:
+
 ```bash
 pip install fastapi==0.115.0 uvicorn==0.32.0 pydantic==2.12.4
 ```
 
 3. Run the server:
+
 ```bash
 python main.py
 ```
@@ -26,18 +29,21 @@ Server runs on `http://localhost:8000`
 ### Frontend Setup
 
 1. Navigate to frontend folder:
+
 ```bash
 cd frontend
 ```
 
 2. Install dependencies:
+
 ```bash
-npm install
+yarn install
 ```
 
 3. Run the development server:
+
 ```bash
-npm run dev
+yarn run dev
 ```
 
 App runs on `http://localhost:3000`
@@ -93,26 +99,6 @@ Use these to test different scenarios:
 **User:** `XY987654321`
 
 **Bot:** "Good news! Your package XY987654321 has been delivered."
-
-## Project Structure
-
-```
-.
-├── backend/
-│   └── main.py              # FastAPI app with all logic
-└── frontend/
-    ├── app/
-    │   ├── components/
-    │   │   ├── ChatInterface.tsx    # Main chat UI
-    │   │   ├── ChatInput.tsx        # Message input
-    │   │   └── MessageBubble.tsx    # Message display
-    │   ├── types/
-    │   │   └── index.ts             # TypeScript types
-    │   ├── utils/
-    │   │   └── api.ts               # API client
-    │   └── page.tsx                 # Home page
-    └── package.json
-```
 
 ## Features
 
